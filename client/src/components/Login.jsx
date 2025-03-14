@@ -11,7 +11,7 @@ const Login = () => {
 
   const {register,handleSubmit,formState:{errors}}=useForm();
   const handleLogin=async(data)=>{
-    await axios.post("http://localhost:4000/api/v1/user/login",data,{
+    await axios.post("https://mern-authentication1-server.onrender.com/api/v1/user/login",data,{
       withCredentials: true,
       headers:{
         "Content-Type": "application/json",
