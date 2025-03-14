@@ -16,7 +16,7 @@ const App = () => {
 
   useEffect(()=>{
     const getUser=async()=>{
-      await axios.get("http://localhost:4000/api/v1/user/me",{withCredentials:true}).then(res=>{
+      await axios.get("https://mern-authentication1-server.onrender.com/api/v1/user/me",{withCredentials:true}).then(res=>{
         setUser(res.data.user);
         setIsAuthenticated(true);
       }).catch(err=>{
