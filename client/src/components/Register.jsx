@@ -16,7 +16,7 @@ const Register = () => {
 
   const handleRegister=async(data)=>{
     data.phone=`+91${data.phone}`
-    await axios.post("http://localhost:4000/api/v1/user/register",data,{
+    await axios.post("https://mern-authentication1-server.onrender.com/api/v1/user/register",data,{
       withCredentials:true,
       headers: {"Content-Type":"application/json"}
     }).then((res)=>{
