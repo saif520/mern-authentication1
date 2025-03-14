@@ -14,7 +14,7 @@ const Home = () => {
 
   const logout = async () => {
     await axios
-      .get("https://mern-authentication1-server.onrender.com/api/v1/user/logout", {
+      .get("http://localhost:4000/api/v1/user/logout", {
         withCredentials: true,
       })
       .then((res) => {
